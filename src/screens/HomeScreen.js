@@ -53,7 +53,7 @@ const HomeScreen = props => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: '35155D',
+    backgroundColor: 'white',
     flex: 1,
   },
   titleContainer: {

@@ -3,25 +3,29 @@ export const GameData  = [
         id: 1,
         name : 'Valorant',
         icon: require('../assets/images/VALO.png'),
-        genre : 'Tactical shooter'
+        genre : 'Tactical shooter',
+        type : 1
     },
     {
         id: 2,
         name : 'CS:GO',
         icon: require('../assets/images/CSGO.png'),
-        genre : 'Tactical shooter'
+        genre : 'Tactical shooter',
+        type : 2
     },
     {
         id: 3,
         name : 'War Thunder',
         icon: require('../assets/images/war thunder.jpg'),
-        genre : 'Combat flight simulator'
+        genre : 'Combat flight simulator',
+        type : 2
     },
     {
         id: 4,
         name : 'Apex legends',
         icon: require('../assets/images/apex.png'),
-        genre : 'Battle royale game (FPS) '
+        genre : 'Battle royale game (FPS) ',
+        type : 2
     },
     {
         id: 5,

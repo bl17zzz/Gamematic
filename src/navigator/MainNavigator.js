@@ -19,9 +19,9 @@ const DrawerNav = () => {
     return(
         <Drawer.Navigator initialRouteName="Home">
             <Drawer.Screen name="Home" component={HomeScreen} options={{
-                title: 'Daily Fashion',
+                title: 'Gamematic',
                 headerStyle : {
-                    backgroundColor: '#D1E5C2'
+                    backgroundColor: '#35155D'
                 }, headerTitleAlign: 'center',
                 drawerIcon : config => <Icon name="home" type="antdesign" />
             }} />
