@@ -21,7 +21,8 @@ const DrawerNav = () => {
             <Drawer.Screen name="Home" component={HomeScreen} options={{
                 title: 'Gamematic',
                 headerStyle : {
-                    backgroundColor: '#35155D'
+                    backgroundColor: '#35155D',
+                    color:'white',
                 }, headerTitleAlign: 'center',
                 drawerIcon : config => <Icon name="home" type="antdesign" />
             }} />
