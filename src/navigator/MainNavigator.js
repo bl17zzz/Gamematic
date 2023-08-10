@@ -1,10 +1,10 @@
 
 // import React from 'react'
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native'
-import {createStackNavigator} from '@react-navigation/stack'
-import {createDrawerNavigator} from '@react-navigation/drawer'
-import {Icon} from 'react-native-elements'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { createDrawerNavigator } from '@react-navigation/drawer'
+import { Icon } from 'react-native-elements'
 import HomeScreen from '../screens/HomeScreen'
 import AddProductScreen from '../screens/AddProductScreen'
 // import ShowProductScreen from '../screens/ShowProductScreen'
@@ -16,35 +16,45 @@ const Stack = createStackNavigator()
 const Drawer = createDrawerNavigator()
 
 const DrawerNav = () => {
-    return(
-        <Drawer.Navigator initialRouteName="Home">
+    return (
+        <Drawer.Navigator initialRouteName="Home"
+            screenOptions={{
+                drawerStyle: {
+                    backgroundColor: 'gray',
+                    
+                }, drawerLabelStyle:{
+                    color: 'white'
+                }
+
+            }}
+        >
             <Drawer.Screen name="Home" component={HomeScreen} options={{
                 title: 'Gamematic',
-                headerStyle : {
+                headerStyle: {
                     backgroundColor: '#35155D',
                 }, headerTitleAlign: 'center',
-                headerTitleStyle : {
+                headerTitleStyle: {
                     color: 'white'
                 },
-                drawerIcon : config => <Icon name="home" type="antdesign" />
+                drawerIcon: config => <Icon name="home" type="antdesign" />
             }} />
             <Drawer.Screen name="AddProduct" component={AddProductScreen} options={{
                 title: 'Add Product',
-                headerStyle : {
+                headerStyle: {
                     backgroundColor: '#D1E5C2'
                 }, headerTitleAlign: 'center',
-                drawerIcon : config => <Icon name="plus" type="antdesign" />
+                drawerIcon: config => <Icon name="plus" type="antdesign" />
             }} />
         </Drawer.Navigator>
     )
 }
 
 const MainNavigator = () => {
-    return(
+    return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen name="Drawer" component={DrawerNav} options={{
-                    headerShown : false
+                    headerShown: false
                 }} />
                 {/* <Stack.Screen name="ShowProduct" component={ShowProductScreen} options={{
                     title: 'Product',
@@ -53,15 +63,15 @@ const MainNavigator = () => {
                         backgroundColor: '#D1E5C2'
                     }
                 }} /> */}
-                <Stack.Screen name="ImageZoom" component={ImageZoomScreen} options={{headerShown : false}} />
+                <Stack.Screen name="ImageZoom" component={ImageZoomScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="EditProduct" component={EditProductScreen} options={{
-                    title : 'Edit Product',
-                    headerTitleAlign : 'center',
-                    headerStyle : {
+                    title: 'Edit Product',
+                    headerTitleAlign: 'center',
+                    headerStyle: {
                         backgroundColor: '#D1E5C2'
                     }
-                }}/>
-                <Stack.Screen name="Splash" component={SplashScreen} options={{headerShown : false}} />
+                }} />
+                <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

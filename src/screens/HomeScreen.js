@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   itemName: {
-    color: 'black',
+    color: 'white',
   },
 });
 
