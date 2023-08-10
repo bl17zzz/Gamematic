@@ -31,6 +31,7 @@ const HomeScreen = props => {
       <FlatList
         data={categoryList}
         numColumns={2}
+        key={2}
         keyExtractor={item => item.id}
         contentContainerStyle={styles.flatListContainer}
         showsVerticalScrollIndicator={false}
