@@ -22,8 +22,10 @@ const DrawerNav = () => {
                 title: 'Gamematic',
                 headerStyle : {
                     backgroundColor: '#35155D',
-                    color:'white',
                 }, headerTitleAlign: 'center',
+                headerTitleStyle : {
+                    color: 'white'
+                },
                 drawerIcon : config => <Icon name="home" type="antdesign" />
             }} />
             <Drawer.Screen name="AddProduct" component={AddProductScreen} options={{

@@ -26,11 +26,11 @@ const HomeScreen = props => {
         sliderBoxHeight={hp('30%')}
       />
       <View style={styles.titleContainer}>
-        <Text style={styles.text}>Categories</Text>
+        <Text style={styles.text}>Genres</Text>
       </View>
       <FlatList
         data={categoryList}
-        numColumns={3}
+        numColumns={2}
         keyExtractor={item => item.id}
         contentContainerStyle={styles.flatListContainer}
         showsVerticalScrollIndicator={false}
@@ -53,7 +53,7 @@ const HomeScreen = props => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: 'white',
+    backgroundColor: 'gray',
     flex: 1,
   },
   titleContainer: {
@@ -77,9 +77,10 @@ const styles = StyleSheet.create({
     height: hp('17%'),
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor : '#252B48'
   },
   icon: {
-    width: wp('20%'),
+    width: wp('40%'),
     height: hp('12%-'),
     resizeMode: 'contain',
   },
