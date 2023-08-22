@@ -3,7 +3,8 @@ import React from 'react'
 import { GameData } from '../../data/GameData'
 import { useEffect, useState } from 'react'
 
-const DetailGenreScreen = () => {
+const DetailGenreScreen = (props) => {
+  const {route } = props
   const categoryId = route.params.categoryId;
   const [data, setData] = useState([]);
   useEffect(() => {
