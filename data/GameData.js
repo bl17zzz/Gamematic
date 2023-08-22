@@ -4,35 +4,75 @@ export const GameData  = [
         name : 'Valorant',
         icon: require('../assets/images/VALO.png'),
         genre : 'Tactical shooter',
-        type : 1
+        type : 1,
+        detail : 'Valorant adalah permainan video POP (penembak orang pertama) taktis multipemain gratis yang dikembangkan dan diterbitkan oleh Riot Games, untuk Microsoft Windows. Pertama kali menggoda dengan nama kode Project A pada Oktober 2019, permainan memulai periode beta tertutup dengan akses terbatas pada 7 April 2020, diikuti dengan perilisan resmi pada 2 Juni 2020. Pengembangan permainan dimulai pada 2014.'
     },
     {
         id: 2,
         name : 'CS:GO',
         icon: require('../assets/images/CSGO.png'),
         genre : 'Tactical shooter',
-        type : 2
+        type : 1,
+        detail : 'Valorant is '
     },
     {
         id: 3,
         name : 'War Thunder',
         icon: require('../assets/images/war thunder.jpg'),
         genre : 'Combat flight simulator',
-        type : 2
+        type : 3,
+        detail : 'Valorant is '
     },
     {
         id: 4,
         name : 'Apex legends',
         icon: require('../assets/images/apex.png'),
         genre : 'Battle royale game (FPS) ',
-        type : 2
+        type : 1,
+        detail : 'Valorant is '
     },
     {
         id: 5,
         name : 'ManEater',
         icon: require('../assets/images/maneater.jpg'),
-        genre : 'Shark adventure game'
-    },
+        genre : 'Shark adventure game',
+        Type: 2,
+        detail : 'Valorant is '
+    }, 
+    // {
+    //     id: 6,
+    //     name : 'Red Dead Redemption 2',
+    //     icon: {
+    //         uri : 'link'
+    //     },
+    //     genre : 'Adventure game',
+    //     Type: 2,
+    //     detail : 'Valorant is '
+    // }, {
+    //     id: 7,
+    //     name : 'Minecraft',
+    //     icon: 'asd',
+    //     genre : 'Sandbox game',
+    //     detail : 'Valorant is '
+    // }, {
+    //     id: 8,
+    //     name : 'PUBG Mobile',
+    //     icon: 'asd',
+    //     genre : 'FPS Game',
+    //     detail : 'Valorant is '
+    // }, {
+    //     id: 9,
+    //     name : 'Call of Duty Warzone',
+    //     icon: 'asd',
+    //     genre : 'FPS Game',
+    //     detail : 'Valorant is '
+    // }, {
+    //     id: 10,
+    //     name : 'Call Of Duty Mobile',
+    //     icon: 'asd',
+    //     genre : 'FPS Game',
+    //     detail : 'Valorant is '
+    // }
    
 ]
 

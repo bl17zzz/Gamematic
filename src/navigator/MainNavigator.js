@@ -11,6 +11,7 @@ import AddProductScreen from '../screens/AddProductScreen'
 import ImageZoomScreen from "../screens/ImageZoomScreen"
 import EditProductScreen from "../screens/EditProductScreen"
 import SplashScreen from '../screens/SplashScreen'
+import DetailGenreScreen from '../screens/DetailGenre';
 
 const Stack = createStackNavigator()
 const Drawer = createDrawerNavigator()
@@ -56,13 +57,13 @@ const MainNavigator = () => {
                 <Stack.Screen name="Drawer" component={DrawerNav} options={{
                     headerShown: false
                 }} />
-                {/* <Stack.Screen name="ShowProduct" component={ShowProductScreen} options={{
-                    title: 'Product',
+                <Stack.Screen name="Genre" component={DetailGenreScreen} options={{
+                    title: 'Games',
                     headerTitleAlign : 'center',
                     headerStyle : {
                         backgroundColor: '#D1E5C2'
                     }
-                }} /> */}
+                }} />
                 <Stack.Screen name="ImageZoom" component={ImageZoomScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="EditProduct" component={EditProductScreen} options={{
                     title: 'Edit Product',

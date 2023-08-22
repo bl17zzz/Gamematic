@@ -9,12 +9,27 @@ export const imageSlider = [
 export const categoryList = [
     {
         id: 1,
-        name: 'FPS Games',
-        icon: 'https://img.freepik.com/free-photo/old-military-officer-pointing-with-gun_651396-1691.jpg?w=740&t=st=1691500083~exp=1691500683~hmac=92ff1d3d775b30783647cd944dca966da57901fc5cc94a4f7fd7890f164a5144'
+        name: 'Shooter Games',
+        icon: 'https://img.freepik.com/free-vector/vintage-monochrome-killer-skull-smoking-cigar_225004-134.jpg?w=740&t=st=1692103083~exp=1692103683~hmac=505435ea1dbc7d68fefc42d4f41f950a0a7acd5dbd48de36212d8a19b1d15bee'
     },
     {
         id: 2,
-        name: 'Android Games',
-        icon: 'https://img.freepik.com/free-vector/mobile-phone-shiny-background_1406-18.jpg?w=740&t=st=1691499307~exp=1691499907~hmac=0741fe94cf8a3a4d254a3f3ad6e1b479dd88b92dc35933e85425e3382c082b3e'
-    }
+        name: 'Adventure Games',
+        icon: 'https://img.freepik.com/free-vector/flat-map-compass-background_23-2147735342.jpg?w=740&t=st=1692103047~exp=1692103647~hmac=1ce7784225737dc38c20c0c6844077ae44e70aeeebeea599cb3da8d0dd864fbc'
+    },
+    {
+        id: 3,
+        name: 'Flight Simulator',
+        icon: 'https://img.freepik.com/free-vector/flying-academy-label_74855-14962.jpg?w=740&t=st=1692102992~exp=1692103592~hmac=5ab212197abb5e58b58006381720445cd9e5132896ed983962cbb9cd81096f04'
+    },
+    {
+        id: 4,
+        name: 'Racing Games',
+        icon: 'https://img.freepik.com/free-vector/gradient-car-wash-logo-design_23-2149909202.jpg?w=740&t=st=1692103149~exp=1692103749~hmac=7dc39791ffe2c14dcf38fe13bad00b925168b4d26e424deebfb530d34dab22ef'
+    },
+    {
+        id: 5,
+        name: 'Strategy Games',
+        icon: 'https://img.freepik.com/free-vector/illustration-business-strategy_53876-9181.jpg?w=826&t=st=1692103765~exp=1692104365~hmac=317d0d3a0350ac3780ce96b66740c43d5451c7f8576554a21b00d15849091938'
+    },
 ];
