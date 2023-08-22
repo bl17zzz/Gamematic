@@ -57,7 +57,7 @@ const MainNavigator = () => {
                 <Stack.Screen name="Drawer" component={DrawerNav} options={{
                     headerShown: false
                 }} />
-                <Stack.Screen name="Genre" component={DetailGenreScreen} options={{
+                <Stack.Screen name="Detail" component={DetailGenreScreen} options={{
                     title: 'Games',
                     headerTitleAlign : 'center',
                     headerStyle : {

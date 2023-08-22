@@ -40,7 +40,7 @@ const HomeScreen = props => {
             <TouchableOpacity
               style={styles.button}
               onPress={() =>
-                navigation.navigate('DetailGenre', {categoryId: item.id})
+                navigation.navigate('Detail', {categoryId: item.id})
               }>
               <Image source={{uri: item.icon}} style={styles.icon} />
               <Text style={styles.itemName}> {item.name}</Text>
