@@ -6,12 +6,12 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { Icon } from 'react-native-elements'
 import HomeScreen from '../screens/HomeScreen'
-import AddProductScreen from '../screens/AddProductScreen'
 // import ShowProductScreen from '../screens/ShowProductScreen'
 import ImageZoomScreen from "../screens/ImageZoomScreen"
 import EditProductScreen from "../screens/EditProductScreen"
 import SplashScreen from '../screens/SplashScreen'
 import DetailGenreScreen from '../screens/DetailGenre';
+import AboutUsscreen from '../screens/AboutUsscreen';
 
 const Stack = createStackNavigator()
 const Drawer = createDrawerNavigator()
@@ -39,12 +39,12 @@ const DrawerNav = () => {
                 },
                 drawerIcon: config => <Icon name="home" type="antdesign" />
             }} />
-            <Drawer.Screen name="AddProduct" component={AddProductScreen} options={{
-                title: 'Add Product',
+            <Drawer.Screen name="AboutUs" component={AboutUsscreen} options={{
+                title: 'About Us',
                 headerStyle: {
                     backgroundColor: '#D1E5C2'
                 }, headerTitleAlign: 'center',
-                drawerIcon: config => <Icon name="plus" type="antdesign" />
+                drawerIcon: config => <Icon name="profile" type="antdesign" />
             }} />
         </Drawer.Navigator>
     )
