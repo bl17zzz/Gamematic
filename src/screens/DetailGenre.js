@@ -28,9 +28,8 @@ const DetailGenreScreen = (props) => {
               />
             </View>
             <View>
-
-            <Text> name : {item.name} </Text>
-            <Text> Genre : {item.genre} </Text>
+            <Text style={styles.name} > {item.name} </Text>
+            <Text style={styles.name} > Genre : {item.genre} </Text>
             </View>
 
           </TouchableOpacity>
@@ -55,5 +54,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'grey',
     shadowColor: 'grey',
+  },
+  name:{
+    color:'black',
+    fontWeight:'bold',
+    fontSize:17
   }
 })
