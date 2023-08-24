@@ -11,7 +11,7 @@ import ImageZoomScreen from "../screens/ImageZoomScreen"
 import EditProductScreen from "../screens/EditProductScreen"
 import SplashScreen from '../screens/SplashScreen'
 import DetailGenreScreen from '../screens/DetailGenre';
-import AboutUsscreen from '../screens/AboutUsscreen';
+import AboutUsScreen from '../screens/AboutUsscreen';
 
 const Stack = createStackNavigator()
 const Drawer = createDrawerNavigator()
@@ -39,7 +39,7 @@ const DrawerNav = () => {
                 },
                 drawerIcon: config => <Icon name="home" type="antdesign" />
             }} />
-            <Drawer.Screen name="AboutUs" component={AboutUsscreen} options={{
+            <Drawer.Screen name="AboutUs" component={AboutUsScreen} options={{
                 title: 'About Us',
                 headerStyle: {
                     backgroundColor: '#D1E5C2'

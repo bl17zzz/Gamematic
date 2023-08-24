@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const AboutUsscreen = () => {
+const AboutUsScreen = () => {
   return (
     <View>
       <Text>AboutUsscreen</Text>
@@ -9,6 +9,6 @@ const AboutUsscreen = () => {
   )
 }
 
-export default AboutUsscreen
+export default AboutUsScreen
 
 const styles = StyleSheet.create({})
