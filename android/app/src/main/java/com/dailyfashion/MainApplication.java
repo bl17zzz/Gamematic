@@ -1,4 +1,4 @@
-package com.dailyfashion;
+package com.GameMatic;
 
 import android.app.Application;
 import android.content.Context;
@@ -11,7 +11,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.soloader.SoLoader;
-import com.dailyfashion.newarchitecture.MainApplicationReactNativeHost;
+import com.GameMatic.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.facebook.react.bridge.JSIModulePackage;
@@ -41,7 +41,7 @@ public class MainApplication extends Application implements ReactApplication {
         }
         @Override
         protected JSIModulePackage getJSIModulePackage() {
-        return new ReanimatedJSIModulePackage(); 
+        return new ReanimatedJSIModulePackage();
         }
 
       };
@@ -82,7 +82,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.dailyfashion.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.GameMatic.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

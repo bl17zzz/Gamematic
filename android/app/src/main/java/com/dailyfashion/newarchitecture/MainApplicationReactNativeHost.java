@@ -1,4 +1,4 @@
-package com.dailyfashion.newarchitecture;
+package com.GameMatic.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.dailyfashion.BuildConfig;
-import com.dailyfashion.newarchitecture.components.MainComponentsRegistry;
-import com.dailyfashion.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.GameMatic.BuildConfig;
+import com.GameMatic.newarchitecture.components.MainComponentsRegistry;
+import com.GameMatic.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

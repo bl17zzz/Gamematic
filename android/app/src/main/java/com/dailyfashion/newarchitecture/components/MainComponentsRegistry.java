@@ -1,4 +1,4 @@
-package com.dailyfashion.newarchitecture.components;
+package com.GameMatic.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
