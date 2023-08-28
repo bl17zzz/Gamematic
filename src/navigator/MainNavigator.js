@@ -12,6 +12,7 @@ import EditProductScreen from "../screens/EditProductScreen"
 import SplashScreen from '../screens/SplashScreen'
 import DetailGenreScreen from '../screens/DetailGenre';
 import AboutUsScreen from '../screens/AboutUsScreen';
+import Preview from '../screens/Preview';
 
 const Stack = createStackNavigator()
 const Drawer = createDrawerNavigator()
@@ -22,7 +23,7 @@ const DrawerNav = () => {
             screenOptions={{
                 drawerStyle: {
                     backgroundColor: 'gray',
-                    
+
                 }, drawerLabelStyle:{
                     color: 'white'
                 }
@@ -62,6 +63,13 @@ const MainNavigator = () => {
                 }} />
                 <Stack.Screen name="Detail" component={DetailGenreScreen} options={{
                     title: 'Games',
+                    headerTitleAlign : 'center',
+                    headerStyle : {
+                        backgroundColor: '#D1E5C2'
+                    }
+                }} />
+                <Stack.Screen name="Preview" component={Preview} options={{
+                    title: 'More Detail',
                     headerTitleAlign : 'center',
                     headerStyle : {
                         backgroundColor: '#D1E5C2'

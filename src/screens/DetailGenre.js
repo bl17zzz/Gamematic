@@ -20,7 +20,13 @@ const DetailGenreScreen = (props) => {
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => {
         return (
-          <TouchableOpacity style={styles.containerBox}>
+          <TouchableOpacity style={styles.containerBox}
+            onPress={() => {
+              props.navigation.navigate('Preview', {
+                item
+              })
+            }}
+          >
             <View>
               <Image
                 source={item.icon}
