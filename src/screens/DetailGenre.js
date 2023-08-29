@@ -7,12 +7,15 @@ import { useEffect, useState } from 'react'
 const DetailGenreScreen = (props) => {
   const {route } = props
   const categoryId = route.params.categoryId;
+  console.log(categoryId)
   const [data, setData] = useState([]);
   useEffect(() => {
     setData(GameData.filter(item => item.type == categoryId))
   }, [])
   return (
-    <View>
+    <View
+      style={styles.detail}
+    >
       <FlatList
       data={data}
       contentContainerStyle={{padding: 10}}
@@ -65,5 +68,9 @@ const styles = StyleSheet.create({
     color:'black',
     fontWeight:'bold',
     fontSize:17
+  },
+  detail:{
+    flex:1,
+    backgroundColor:'black'
   }
 })

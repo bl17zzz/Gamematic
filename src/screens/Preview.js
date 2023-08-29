@@ -15,9 +15,9 @@ const Preview = props => {
             source={item.icon}
             style={styles.imageIcon}
         />
-      <Text>Name : {item.name}</Text>
-      <Text>Genre : {item.genre}</Text>
-      <Text>Detail : {item.detail}</Text>
+      <Text style={styles.detail} >Name : {item.name}</Text>
+      <Text style={styles.detail} >Genre : {item.genre}</Text>
+      <Text style={styles.name} >Detail : {item.detail}</Text>
     </View>
   );
 };
@@ -35,5 +35,17 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         margin: 10,
         padding: 20,
+      
+    },
+    name:{
+      color:'black',
+      fontSize:15,
+      fontWeight:'bold'
+    },
+    detail:{
+      color:'black',
+      fontSize:20,
+      fontWeight:'bold',
+
     }
 });

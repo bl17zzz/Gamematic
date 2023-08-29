@@ -24,7 +24,7 @@ const DrawerNav = () => {
                 drawerStyle: {
                     backgroundColor: 'gray',
 
-                }, drawerLabelStyle:{
+                }, drawerLabelStyle: {
                     color: 'white'
                 }
 
@@ -62,18 +62,22 @@ const MainNavigator = () => {
                     headerShown: false
                 }} />
                 <Stack.Screen name="Detail" component={DetailGenreScreen} options={{
-                    title: 'Games',
-                    headerTitleAlign : 'center',
-                    headerStyle : {
-                        backgroundColor: '#D1E5C2'
-                    }
+                    title: 'Detail',
+                    headerStyle: {
+                        backgroundColor: '#35155D',
+                    }, headerTitleAlign: 'center',
+                    headerTitleStyle: {
+                        color: 'white'
+                    },
                 }} />
-                <Stack.Screen name="Preview" component={Preview} options={{
-                    title: 'More Detail',
-                    headerTitleAlign : 'center',
-                    headerStyle : {
-                        backgroundColor: '#D1E5C2'
-                    }
+                <Stack.Screen name="Preview" component={Preview}options={{
+                    title: 'Game Preview',
+                    headerStyle: {
+                        backgroundColor: '#35155D',
+                    }, headerTitleAlign: 'center',
+                    headerTitleStyle: {
+                        color: 'white'
+                    },
                 }} />
                 <Stack.Screen name="ImageZoom" component={ImageZoomScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="EditProduct" component={EditProductScreen} options={{
